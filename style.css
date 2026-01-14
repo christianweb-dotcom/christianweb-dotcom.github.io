@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(135deg, #6a0dad, #2ecc71);
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    background: none;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #d5ffea;
+    font-size: 22px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    background-color: #6a0dad;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+
+h3 {
+    color: #2ecc71;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #6a0dad;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #bfa14a, #6e6e6e);
+    margin: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+.hire-btn {
+    display: inline-block;
+    background: #2ecc71;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.hire-btn:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 30px;
+    padding: 15px 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+.cta {
+    background: #6a0dad;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta p {
+    color: #eee;
+}
