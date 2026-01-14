@@ -7,10 +7,12 @@
 
 <body>
 
+<!-- WhatsApp Float Button -->
 <a href="https://wa.me/263778524912" class="whatsapp-float" target="_blank">
     💬
 </a>
 
+<!-- Hero Section -->
 <div class="hero">
     <h1>Christian Chifambausiku</h1>
     <h3>Freelance Web Developer</h3>
@@ -21,14 +23,33 @@
     </a>
 </div>
 
-<h2>My Services</h2>
-<ul>
-    <li>Simple Business Websites</li>
-    <li>Personal Portfolio Websites</li>
-    <li>Landing Pages</li>
-    <li>Website Fixing</li>
-</ul>
- <section id="about">
+<!-- Services Section with Smooth Accordion -->
+<section id="services">
+  <h2>My Services</h2>
+
+  <button class="accordion">Simple Business Websites</button>
+  <div class="panel">
+    <p>I build simple, professional business websites that are easy to navigate and help attract customers.</p>
+  </div>
+
+  <button class="accordion">Personal Portfolio Websites</button>
+  <div class="panel">
+    <p>I design personal portfolio websites to showcase your skills, projects, or business professionally.</p>
+  </div>
+
+  <button class="accordion">Landing Pages</button>
+  <div class="panel">
+    <p>I create landing pages that grab attention, increase leads, and promote your products or services effectively.</p>
+  </div>
+
+  <button class="accordion">Website Fixing</button>
+  <div class="panel">
+    <p>I fix broken websites, improve performance, and make them mobile-friendly and visually appealing.</p>
+  </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
     <h2>About Me</h2>
     <p>
       Hi, I’m <strong>Christian Chifambausiku</strong>, a freelance web developer.
@@ -41,45 +62,88 @@
     <p>
       My goal is to deliver fast, reliable, and affordable web solutions that make your online presence stand out.
     </p>
-  </section>
+</section>
 
-</body>
+<!-- Skills Section -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>HTML5 & CSS3</li>
+    <li>Responsive Web Design</li>
+    <li>Website Redesign & Fixes</li>
+    <li>Landing Pages</li>
+    <li>GitHub & Website Hosting</li>
+  </ul>
+</section>
 
-</p>
+<!-- My Work Section -->
+<section id="work">
+  <h2>My Work</h2>
+  <ul>
+      <li>Business Website – Local Shop</li>
+      <li>Personal Portfolio Website</li>
+      <li>Landing Page for Startup</li>
+      <li>Website Redesign</li>
+  </ul>
+</section>
 
-<h2>My Work</h2>
-<ul>
-    <li>Business Website – Local Shop</li>
-    <li>Personal Portfolio Website</li>
-    <li>Landing Page for Startup</li>
-    <li>Website Redesign</li>
-</ul>
+<!-- Pricing Section -->
+<section id="pricing">
+  <h2>Pricing</h2>
+  <ul>
+      <li>
+          Basic Website – $50<br>
+          1–3 pages, mobile friendly
+      </li>
+      <li>
+          Business Website – $100<br>
+          5 pages, contact form, modern design
+      </li>
+      <li>
+          Pro Website – $200<br>
+          Full website, WhatsApp button, hosting help
+      </li>
+  </ul>
+</section>
 
-<h2>Pricing</h2>
-<ul>
-    <li>
-        Basic Website – $50<br>
-        1–3 pages, mobile friendly
-    </li>
-    <li>
-        Business Website – $100<br>
-        5 pages, contact form, modern design
-    </li>
-    <li>
-        Pro Website – $200<br>
-        Full website, WhatsApp button, hosting help
-    </li>
-</ul>
-<div class="cta">
+<!-- Call to Action Section -->
+<section class="cta">
     <h2>Ready to get your website?</h2>
     <p>Let’s build something that helps your business grow online.</p>
     <a class="hire-btn" href="https://wa.me/263778524912" target="_blank">
         Start Your Project
     </a>
-</div
-<h2>Contact Me</h2>
-<p>Email: christianchch2002@gmail.com</p>
-<p>WhatsApp: +263 77 852 4912</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:christianchch2002@gmail.com">christianchch2002@gmail.com</a></p>
+  <p>WhatsApp: <a href="https://wa.me/263778524912" target="_blank">+263 77 852 4912</a></p>
+</section>
+
+<!-- JavaScript for Smooth Sliding Accordion -->
+<script>
+const acc = document.querySelectorAll(".accordion");
+acc.forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    const panel = button.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      // Panel is open, close it
+      panel.style.maxHeight = null;
+      panel.style.paddingTop = "0";
+      panel.style.paddingBottom = "0";
+    } else {
+      // Panel is closed, open it
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.paddingTop = "10px";
+      panel.style.paddingBottom = "10px";
+    }
+  });
+});
+</script>
 
 </body>
 </html>

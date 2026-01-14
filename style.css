@@ -6,46 +6,9 @@ body {
     text-align: center;
 }
 
-.hero {
-    background: linear-gradient(135deg, #6a0dad, #2ecc71);
-    color: white;
-    padding: 60px 20px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
-
-.hero h1 {
-    background: none;
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero h3 {
-    color: #d5ffea;
-    font-size: 22px;
-}
-
-.hero p {
-    color: white;
-    font-size: 18px;
-    max-width: 500px;
-    margin: auto;
-}
-
-h1 {
-    background-color: #6a0dad;
-    color: white;
-    padding: 25px;
+h1, h2, h3 {
     margin: 0;
-}
-
-h3 {
-    color: #2ecc71;
-}
-
-h2 {
-    margin-top: 40px;
-    color: #6a0dad;
+    padding: 0;
 }
 
 p {
@@ -69,10 +32,38 @@ li {
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     transition: 0.3s;
+    cursor: default;
 }
 
 li:hover {
     transform: scale(1.05);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(135deg, #6a0dad, #2ecc71);
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #d5ffea;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .hire-btn {
@@ -94,6 +85,7 @@ li:hover {
     transform: scale(1.05);
 }
 
+/* ===== WhatsApp Float ===== */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -111,6 +103,16 @@ li:hover {
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+
+/* ===== Section Headings ===== */
+h2 {
+    margin-top: 40px;
+    color: #6a0dad;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===== Call-to-Action Section ===== */
 .cta {
     background: #6a0dad;
     color: white;
@@ -121,8 +123,90 @@ li:hover {
 
 .cta h2 {
     color: white;
+    margin-bottom: 15px;
 }
 
 .cta p {
     color: #eee;
+    margin-bottom: 20px;
+}
+
+/* ===== Services Section (Accordion) ===== */
+#services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background: linear-gradient(to right, #d4af37, #8b8000);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.accordion:hover {
+    opacity: 0.9;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #333;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion.active {
+    background-color: #c49b00;
+}
+
+/* ===== Skills, Work, Pricing Sections (Hover Effects) ===== */
+#skills ul li,
+#work ul li,
+#pricing ul li {
+    background: linear-gradient(135deg, #bfa14a, #6e6e6e);
+    margin: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#skills ul li:hover,
+#work ul li:hover,
+#pricing ul li:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero h3 {
+        font-size: 18px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hire-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    li {
+        margin: 10px;
+        padding: 15px;
+    }
 }
